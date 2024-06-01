@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '14'
+services:
+  - mongodb
+  - postgresql
+before_script:
+  - npm run db:migrate
+script:
+  - npm run test
+  - npm run build
+deploy:
+  provider: heroku
+  app: weather-app-backend
+  api_key: $HEROKU_API_KEY

@@ -1,0 +1,23 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Weather App API",
+      "version": "1.0.0",
+      "description": "API documentation for the Weather App"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/weather": {
+        "get": {
+          "summary": "Get weather data",
+          "responses": {
+            "200": {
+              "description": "Successful response"
+            }
+          }
+        }
+      }
+    }
+}
